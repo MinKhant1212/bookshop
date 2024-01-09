@@ -50,18 +50,18 @@ public class BookShopApplication {
              Book book2 = new Book(
                      2,
                      IsbnGenerator.generate(),
-                     "Oliver Twist",
-                     "Excellent",
-                     50.3,
+                     "Great Expectations",
+                     "Good Choice",
+                     25.3,
                      20,
                      "  https://source.unsplash.com/400x300/?flower"
              );
              Book book3 = new Book(
                      3,
                      IsbnGenerator.generate(),
-                     "Oliver Twist",
-                     "Excellent",
-                     50.3,
+                     "Bleak House",
+                     "Nice",
+                     22.3,
                      20,
                      "  https://source.unsplash.com/400x300/?flower"
              );
@@ -79,7 +79,7 @@ public class BookShopApplication {
                      IsbnGenerator.generate(),
                      "Return of the Native",
                      "Excellent",
-                     50.3,
+                     25.3,
                      20,
                      "  https://source.unsplash.com/400x300/?flower"
              );
