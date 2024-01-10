@@ -35,6 +35,29 @@
 
                 </div>
             </section>
+            <section>
+                <div class="container text-center mt-4">
+                    <h1>WHAT OTHERS ARE SAYING</h1>
+
+                    <div class="row">
+                        <div class="col-md-4" th:each="book : ${books}">
+                            <div class="card mb-3">
+                                <img th:src="${book.imgUrl}" class="img-thumbnail" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container text-center mt-4">
+                    <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                    <blockquote class="blockquote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor esse eveniet explicabo illum ipsam natus nobis provident voluptates? Alias, aspernatur atque
+                        consequatur eos eveniet illo non repudiandae sit vitae?
+                        <footer class="blockquote-footer mt-3">Richard Chan</footer>
+                    </blockquote>
+                </div>
+            </section>
 
             <section id="quotes">
                 <div class="container text-center mt-4 p-5">
@@ -68,68 +91,13 @@
             </section>
 
 
-            <section>
-                <div class="container text-center mt-4">
-                    <h1>WHAT OTHERS ARE SAYING</h1>
 
-                    <div class="row">
-                        <div class="col-md-4" th:each="book : ${books}">
-                            <div class="card mb-3">
-                                <img th:src="${book.imgUrl}" class="img-thumbnail" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div class="container text-center mt-4">
-                    <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
-                    <blockquote class="blockquote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur dolor esse eveniet explicabo illum ipsam natus nobis provident voluptates? Alias, aspernatur atque
-                        consequatur eos eveniet illo non repudiandae sit vitae?
-                        <footer class="blockquote-footer mt-3">Richard Chan</footer>
-                    </blockquote>
-                </div>
-            </section>
 
 
         </div>
 
     </div>
-    <section class="bg-dark text-white">
-        <div class="container text-center p-5">
-            <h3>JOIN OUR NEWS BUYERS FOR DETAILS AND UPDATE AND OFFERS</h3>
-            <div class="row justify-content-center">
-                <div class="col-10 col-md-6 col-sm-8 col-lg-4">
-                    <form action="#">
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control">
-                            <button class="btn btn-success input-group-text">Search</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="footer" class="bg-secondary p-4 text-white">
-        <ul class="nav text-center justify-content-center flex-column flex-sm-row text-white">
-            <li class="nav-item">
-                <a href="#" class="nav-link">FAQ</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">EXPERIENCE</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">CONTACT</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">BOOKNOW</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">EXPLORE</a>
-            </li>
-        </ul>
-    </section>
+
 </main>
 </body>
 </html>
